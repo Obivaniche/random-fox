@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --index: calc(1vh + 1vw);
+}
+
+body {
+    background-color: #E5E4E2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contaner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contaner__heder {
+    margin: 24px auto;
+}
+
+.card {
+    width: calc(var(--index) * 25);
+    padding: calc(var(--index) * .75);
+    margin: calc(var(--index) * .75);
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 6px 6px 12px #696969;
+}
+
+.card__image {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.button {
+    border: none;
+    border-radius: 8px;
+    padding: 8px;
+    cursor: pointer;
+    background-color: #FFFFFF;
+    box-shadow: 3px 3px 6px #696969;
+}
+
+.button:hover {
+    background-color: #696969;
+    color: #FFFFFF;
+    transition: all .4s ease;
+}
